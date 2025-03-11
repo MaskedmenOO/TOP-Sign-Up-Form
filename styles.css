@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('fonts/Aller.woff2') format('woff2'),
+        url('fonts/Aller.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('fonts/Aller-Bold.woff2') format('woff2'),
+        url('fonts/Aller-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body,html {
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+
+.Left-Div{
+    position: relative;
+    background-image: url("leaf.jpg");
+    width:26vw;
+    height:100vh;
+    background-size: cover;
+    background-position: -50px 0;
+    background-repeat: no-repeat;
+}
+
+.Odin{
+    display:flex;
+    position: absolute;
+    top:150px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    padding:5px 0;
+}
+ 
+.Odin-Logo{
+    width: 60px;
+    height:80px;
+    background-image: url("odin-lined.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Odin-Text{
+    font-family: 'Norse';
+    font-size: 90px;
+    color:white;
+}
+
+.Bottom-Credits {
+    position: fixed;
+    bottom:0;
+    width: 26vw;
+    color: #faf9f5;
+    text-align: center;
+}
+
+
+.Right-Div{
+    width:74vw;
+    
+}
+
+.Major-Right{
+    position: absolute;
+    top:15vh;
+    width:74vw;
+    height:40vh;
+}
+
+.Long-Text{
+    max-width: 55ch;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    padding-left: 50px;
+}
+
+input,
+fieldset,
+label,
+select,
+button {
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display:block;
+}
+
+.Form-Right-Top, .Form-Right-Middle, .Form-Right-Bottom{
+    display:flex;
+    padding:10px;
+}
+
+.Short-Text{
+    padding-left: 10px;
+    color:black;
+    font-size: 1.4rem;
+}
+
+input{
+    appearance: none;
+    height: 25px;
+    border-style: solid;
+    border-color: #E5E7EB;
+    border-radius: 4px;
+}
+
+input:focus{
+    outline:none;
+    border: solid rgba(25, 91, 121, 0.981);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+.Last-Name, .Number, .Confirm-Password{
+    margin-left: 60px;
+}
+
+fieldset{
+    margin-top: 40px;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-family: 'Aller';
+    font-weight: bold;
+    color:#4c545f;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+button{
+    appearance: none;
+    font-family: 'Aller';
+    font-weight: bold;
+   font-size: 15px;
+   background-color: #596D48;
+   color:#faf9f5;
+   border-radius:4px;
+   border:none;
+   height: 6vh;
+   width: 30vh;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin-left: 50px;
+   margin-top: 10px;
+}
+
+.Last-Sentence{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:50px;
+    padding-top: 20px;
+}
+
+a{
+    font-weight: bold;
+    color:#596D48;
+    text-decoration: none;
+}
